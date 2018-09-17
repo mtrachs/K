@@ -141,7 +141,7 @@ alder.estimate <- data.frame(taxon = 'Alder',
 
 PPE_Final <- rbind(PPE_Final,alder.estimate)
 PPE_Final <- PPE_Final[order(PPE_Final$taxon),]
-colnames(PPE_Final) <- c('taxon','ppe','error','ppe.sim','error.sim')
+colnames(PPE_Final) <- c('taxon','ppe.analytical','error.analytical','ppe','error')
 
 saveRDS(PPE_Final,'~/Reveals_NEUS/data/PPEs_agg.RDS')
 
